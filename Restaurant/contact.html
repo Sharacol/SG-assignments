@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./restaurantStyles.css">
+    </head>
+    <header>
+        <h1>
+            Marcellino's
+        </h1>        
+        <div class = "pageLinks">
+                <a href='./front.html'>Home</a>
+                <a href='./menu.html'>Menu</a>
+                <a href='./contact.html'>Contact Us</a>
+        </div>
+    </header>
+    <body>
+        <form>
+            <div>
+                Name:<input type = "text" id = "name">
+            </div>
+            <div>Email:<input type = "text" id = "email"></div>
+            <div>Phone:<input type = "number" id = "phone"></div>
+            <div>
+                <span>
+                    Reason for Inquiry:
+                </span>
+                <select id = "inquiry">
+                    <option value = Catering>Catering</option>
+                    <option value = "Private Party" Party>Private Party</option>
+                    <option value = Feedback>Feedback</option>
+                    <option value = Other>Other</option>
+                </select>
+            </div>
+            <div>
+                    <span>Additional Information:</span><textarea type = "text" id = "additionalInfo"></textarea>
+
+            </div>
+
+            <div>
+                Have you been to the restaurant?
+                <span>
+                    <input type = "radio" name = "visit" value = "No"> No
+                </span>
+                <span>
+                    <input type = "radio" name = "visit" value = "Yes"> Yes
+                </span>
+            </div> 
+            <div>
+                Best days to contact you:
+                <span>
+                    <input type="checkbox" id = "test" name = "days" value = "M"> M
+                </span>
+                <span>
+                    <input type="checkbox" name = "days" value = "T"> T
+                </span>
+                <span>
+                    <input type="checkbox" name = "days" value = "W"> W
+                </span>
+                <span>
+                    <input type="checkbox" name = "days" value = "Th"> Th
+                </span>
+                <span>
+                    <input type="checkbox" name = "days" value = "F"> F
+                </span> 
+            </div> 
+            <button type = "button" onclick ="contactSubmit()">Send Request</button>
+        </form>
+        <script src = "./validate.js"></script>
+        <footer>
+            <div>
+                42 Good Food ln, Tastyville, MN, 5555
+            </div>
+            <div>
+                (777) 777-7777
+            </div>
+        </footer>
+    </body>
+</html>
