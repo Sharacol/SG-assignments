@@ -5,31 +5,31 @@ html, body{
 body{
     /* overflow: hidden; */
     text-align: center;
-    background-color: aqua;
+    background-color: #ca7774;
     line-height: 2;
 }
 
 footer{
     position: relative;
     bottom: 0rem;
-    border-top: 1px solid black;
     width: 100%;
     padding: 1rem;
     text-align: center;
-    background-color: darkgray;
+    background-color: #9fc5ea;
 }
 
 header{
     position: relative;
     padding: 1rem;
     top: 0;
-    border-bottom: 1px solid black;
     width: 100%;
     text-align: center;
-    background-color: darkgray;
+    background-color: #9fc5ea;
 
 }
-
+.jumbotron{
+    background-color: #727a6f;
+}
 h1{
     font-family: 'Staatliches', cursive;
 
@@ -47,7 +47,7 @@ a:hover{
 }
 table{
     border: 1px solid black;
-    background-color: burlywood;
+    background-color: #9fc5ea;
     margin: auto;
     margin-bottom: 1rem;
 
@@ -88,4 +88,12 @@ td:nth-child(odd){
 .announcement{
     font-family: 'Pacifico', cursive;
     font-size: 2rem;
+}
+
+th{
+    text-align: left;
+}
+
+.nav{
+    width: 100%
 }

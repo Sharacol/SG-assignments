@@ -10,46 +10,55 @@
 
     <header>
         <div class = "jumbotron">
-            <h1 class ="display-4">
-                Shark's
-            </h1>  
-            <hr class = "my-4">
-            
-            <div class = "pageLinks">
-                <ul class ="nav nav-pills nav-fill">
-
-                    <li class = "nav-item">
-                        <a class="nav-link" href='./menu.html'>Menu</a>                    
-                    </li>                    
-                    <li class = "nav-item ">
-                        <a class = "nav-link active" href='./front.html'>
-                            <img src="../open-iconic-master/svg/home.svg" alt = "home icon" class="homeIcon">
-                        </a>
-                    </li>
-                    <li class = "nav-item">
-                        <a class = "nav-link" href='./contact.html'>Contact Us</a> 
-                                           
-                    </li>
-                </ul>
-            </div>
+            <div class = "row justify-content-center">
+                    <h1 class ="display-4">
+                        Shark's Palace
+                    </h1>  
+                </div>
+                <hr class = "my-4">
+    
+                
+                <div class = "pageLinks row justify-content-center">
+                    <ul class ="nav nav-pills nav-fill">
+                        <div class="col">
+                            <li class = "nav-item">
+                                <a class="nav-link" href='./menu.html'>Menu</a>                    
+                            </li>
+                        </div>
+                        <div class="col">
+                            <li class = "nav-item ">
+                                <a class = "nav-link active" href='./front.html'>
+                                    <img src="../open-iconic-master/svg/home.svg" alt = "home icon" class="homeIcon">
+                                </a>
+                            </li>
+                        </div>
+                        <div class="col">
+                            <li class = "nav-item">
+                                <a class = "nav-link" href='./contact.html'>Contact Us</a> 
+                                                
+                            </li>
+                        </div>
+    
+                    </ul>
+                </div>
     </header>
         <form>
             <div class="form-row justify-content-center">
-                <div class="col-sm-2 mb-3">
+                <div class="col-2 mb-3">
                     <label for = "name" ><strong>Name</strong></label>
                     <input class = "form-control" type = "text" id = "name" placeholder="Name">
                 </div>
-                <div class="col-sm-2 mb-3">
+                <div class="col-2 mb-3">
                         <label for = "email" ><strong>Email</strong></label>
                         <input class = "form-control" type = "email" id = "email" placeholder="Email">
                 </div>
-                <div class="col-sm-2 mb-3">
+                <div class="col-2 mb-3">
                         <label for = "phone"><strong>Phone</strong></label>
                         <input class = "form-control" type = "text" id = "phone" placeholder="Phone number">
                 </div>
             </div>
             <div class="form-group row justify-content-center">
-                <div class = "col-sm-6">
+                <div class = "col-6">
                     <label for="inquiry"><strong>Reason for inquiry</strong></label>
                     <select class="form-control" id = "inquiry">
                         <option value = Catering>Catering</option>
@@ -60,14 +69,14 @@
                 </div>
             </div>
             <div class = "form-group row justify-content-center">
-                <div class="col-sm-6">
+                <div class="col-6">
                     <label for = "additionalInfo">Additional Information</label>
                     <textarea type = "text" id = "additionalInfo" class = "form-control" rows="3"></textarea>
                 </div>
             </div>
 
             <fieldset class="form-group">
-                <div class = "row justify-content-center col-sm-12">
+                <div class = "row justify-content-center col">
                     <legend class = "col-form-label"><strong>Have you been to the restaurant?</strong></legend>
                     <div class="form-check form-check-inline">
                         <input class = "form-check-input" type ="radio" id="visitNo" name="visit" value="No" checked>
@@ -83,10 +92,10 @@
                     </div>
                 </div>
             </fieldset>
-            <div class="form-group row col-sm-12 justify-content-center">
+            <div class="form-group row col justify-content-center">
                 <div class ="col"><strong>Best days to contact you:</strong></div>
             </div>
-            <div class="form-group row justify-content-center col-sm-12">
+            <div class="form-group row justify-content-center ">
                 <div class ="col">
                     <div class ="form-check form-check-inline">
                         <input class ="form-check-input" type = "checkbox" name="days" id="M" value="M">
@@ -126,10 +135,10 @@
             </div>
         </noscript>
         <footer>
-            <div>
+            <div class = "row justify-content-center">
                 42 Good Food ln, Tastyville, MN, 55555
             </div>
-            <div>
+            <div class = "row justify-content-center">
                 777-777-7777
             </div>
         </footer>

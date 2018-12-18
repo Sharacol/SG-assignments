@@ -46,9 +46,29 @@ let contactSubmit = () =>{
 
     if(missingInfo.length===0){
         alert('Thank you! We will get backto you soon.')
+        // clear()    
+        document.getElementById('name').value = "",
+        document.getElementById('email').value = "",
+        document.getElementById('phone').value = "",
+        document.getElementById('inquiry').value = "",
+        document.getElementById('additionalInfo').value ="",
+
+        document.getElementsByName('visit').forEach((val) =>{
+            if (val.value === "No"){
+                val.checked=true
+            }else{
+                val.checked=false
+            }
+        })
+
+        document.getElementsByName('days').forEach( (val) =>{
+            val.checked=false
+        })
+
     }else{
         alert(`Missing: ${missingInfo}`)
     }
 
     return false
 }
+

@@ -11,29 +11,38 @@
 
     <header>
         <div class = "jumbotron">
-            <h1 class ="display-4">
-                Shark's
-            </h1>  
+            <div class = "row justify-content-center">
+                <h1 class ="display-4">
+                    Shark's Palace
+                </h1>  
+            </div>
             <hr class = "my-4">
-            
-            <div class = "pageLinks">
-                <ul class ="nav nav-pills nav-fill">
 
-                    <li class = "nav-item">
-                        <a class="nav-link" href='./menu.html'>Menu</a>                    
-                    </li>                    
-                    <li class = "nav-item ">
-                        <a class = "nav-link active" href='./front.html'>
-                            <img src="../open-iconic-master/svg/home.svg" alt = "home icon" class="homeIcon">
-                        </a>
-                    </li>
-                    <li class = "nav-item">
-                        <a class = "nav-link" href='./contact.html'>Contact Us</a> 
-                                           
-                    </li>
+            
+            <div class = "pageLinks row justify-content-center">
+                <ul class ="nav nav-pills nav-fill">
+                    <div class="col">
+                        <li class = "nav-item">
+                            <a class="nav-link" href='./menu.html'>Menu</a>                    
+                        </li>
+                    </div>
+                    <div class="col">
+                        <li class = "nav-item ">
+                            <a class = "nav-link active" href='./front.html'>
+                                <img src="../open-iconic-master/svg/home.svg" alt = "home icon" class="homeIcon">
+                            </a>
+                        </li>
+                    </div>
+                    <div class="col">
+                        <li class = "nav-item">
+                            <a class = "nav-link" href='./contact.html'>Contact Us</a> 
+                                            
+                        </li>
+                    </div>
+
                 </ul>
             </div>
-            <div id="restaurantInfo" class = "carousel slide" data-ride="carousel">
+            <div id="restaurantInfo" class = "carousel slide row" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#restaurantInfo" data-slide-to="0" class="active"></li>
                     <li data-target="#restaurantInfo" data-slide-to="1"></li>
@@ -66,7 +75,10 @@
 
     </header>
         <div class = "homePage">
-            <img src = "Marcellinos.jpeg" alt = "Marcellino's" width="400px" height = "150px" style = "display:block; margin: auto; text-align: center"/>
+            <div class = "row">
+                <img src = "Marcellinos.jpeg" alt = "Marcellino's" width="400px" height = "150px" style = "display:block; margin: auto; text-align: center"/>
+            </div>
+
             <div class = "row col-3 justify-content-center description">
                 <span><strong>Restaurant Description</strong></span><br/>
                 <p>
@@ -87,12 +99,12 @@
             </div>
         </noscript>        
         <footer>
-                <div>
+                <div class = "row justify-content-center">
                     42 Good Food ln, Tastyville, MN, 55555
                 </div>
-                <div>
+                <div class = "row justify-content-center">
                     777-777-7777
                 </div>
-        </footer>
+            </footer>
     </body>
 </html>
