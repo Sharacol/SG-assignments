@@ -1,77 +1,136 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="./restaurantStyles.css">
+            <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="./restaurantStyles.css">
+        <title>Contact Us</title>
     </head>
-    <header>
-        <h1>
-            Marcellino's
-        </h1>        
-        <div class = "pageLinks">
-                <a href='./front.html'>Home</a>
-                <a href='./menu.html'>Menu</a>
-                <a href='./contact.html'>Contact Us</a>
-        </div>
-    </header>
     <body>
+
+    <header>
+        <div class = "jumbotron">
+            <h1 class ="display-4">
+                Shark's
+            </h1>  
+            <hr class = "my-4">
+            
+            <div class = "pageLinks">
+                <ul class ="nav nav-pills nav-fill">
+
+                    <li class = "nav-item">
+                        <a class="nav-link" href='./menu.html'>Menu</a>                    
+                    </li>                    
+                    <li class = "nav-item ">
+                        <a class = "nav-link active" href='./front.html'>
+                            <img src="../open-iconic-master/svg/home.svg" alt = "home icon" class="homeIcon">
+                        </a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href='./contact.html'>Contact Us</a> 
+                                           
+                    </li>
+                </ul>
+            </div>
+    </header>
         <form>
-            <div>
-                Name:<input type = "text" id = "name">
+            <div class="form-row justify-content-center">
+                <div class="col-sm-2 mb-3">
+                    <label for = "name" ><strong>Name</strong></label>
+                    <input class = "form-control" type = "text" id = "name" placeholder="Name">
+                </div>
+                <div class="col-sm-2 mb-3">
+                        <label for = "email" ><strong>Email</strong></label>
+                        <input class = "form-control" type = "email" id = "email" placeholder="Email">
+                </div>
+                <div class="col-sm-2 mb-3">
+                        <label for = "phone"><strong>Phone</strong></label>
+                        <input class = "form-control" type = "text" id = "phone" placeholder="Phone number">
+                </div>
             </div>
-            <div>Email:<input type = "text" id = "email"></div>
-            <div>Phone:<input type = "number" id = "phone"></div>
-            <div>
-                <span>
-                    Reason for Inquiry:
-                </span>
-                <select id = "inquiry">
-                    <option value = Catering>Catering</option>
-                    <option value = "Private Party" Party>Private Party</option>
-                    <option value = Feedback>Feedback</option>
-                    <option value = Other>Other</option>
-                </select>
+            <div class="form-group row justify-content-center">
+                <div class = "col-sm-6">
+                    <label for="inquiry"><strong>Reason for inquiry</strong></label>
+                    <select class="form-control" id = "inquiry">
+                        <option value = Catering>Catering</option>
+                        <option value = "Private Party" Party>Private Party</option>
+                        <option value = Feedback>Feedback</option>
+                        <option value = Other>Other</option>
+                    </select>
+                </div>
             </div>
-            <div>
-                    <span>Additional Information:</span><textarea type = "text" id = "additionalInfo"></textarea>
+            <div class = "form-group row justify-content-center">
+                <div class="col-sm-6">
+                    <label for = "additionalInfo">Additional Information</label>
+                    <textarea type = "text" id = "additionalInfo" class = "form-control" rows="3"></textarea>
+                </div>
+            </div>
 
+            <fieldset class="form-group">
+                <div class = "row justify-content-center col-sm-12">
+                    <legend class = "col-form-label"><strong>Have you been to the restaurant?</strong></legend>
+                    <div class="form-check form-check-inline">
+                        <input class = "form-check-input" type ="radio" id="visitNo" name="visit" value="No" checked>
+                        <label class ="form-check-label" for = "visitNo">
+                            No
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class = "form-check-input" type ="radio" id="visitYes" name="visit" value="Yes">
+                        <label class ="form-check-label" for = "visitNo">
+                            Yes
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row col-sm-12 justify-content-center">
+                <div class ="col"><strong>Best days to contact you:</strong></div>
             </div>
-
-            <div>
-                Have you been to the restaurant?
-                <span>
-                    <input type = "radio" name = "visit" value = "No"> No
-                </span>
-                <span>
-                    <input type = "radio" name = "visit" value = "Yes"> Yes
-                </span>
+            <div class="form-group row justify-content-center col-sm-12">
+                <div class ="col">
+                    <div class ="form-check form-check-inline">
+                        <input class ="form-check-input" type = "checkbox" name="days" id="M" value="M">
+                        <label class = "form-check-label" for="M">M</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class ="form-check-input" type = "checkbox" name="days" id="T" value="T">
+                        <label class = "form-check-label" for="T">T</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class ="form-check-input" type = "checkbox" name="days" id="W" value="W">
+                        <label class = "form-check-label" for="W">W</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class ="form-check-input" type = "checkbox" name="days" id="Th" value="Th">
+                        <label class = "form-check-label" for="Th">Th</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class ="form-check-input" type = "checkbox" name="days" id="F" value="F">
+                        <label class = "form-check-label" for="F">F</label>
+                    </div>
+                </div>    
             </div> 
-            <div>
-                Best days to contact you:
-                <span>
-                    <input type="checkbox" id = "test" name = "days" value = "M"> M
-                </span>
-                <span>
-                    <input type="checkbox" name = "days" value = "T"> T
-                </span>
-                <span>
-                    <input type="checkbox" name = "days" value = "W"> W
-                </span>
-                <span>
-                    <input type="checkbox" name = "days" value = "Th"> Th
-                </span>
-                <span>
-                    <input type="checkbox" name = "days" value = "F"> F
-                </span> 
-            </div> 
-            <button type = "button" onclick ="contactSubmit()">Send Request</button>
+            <div class ="row col justify-content-center">
+                <button type = "button" class = "btn btn-primary " onclick ="contactSubmit()">Send Request</button>
+            </div>
         </form>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
         <script src = "./validate.js"></script>
+        <noscript>
+            <div class = "row col justify-content-center jsWarning">
+                <h2>
+                    This site is best viewed with javascript enabled
+                </h2>
+            </div>
+        </noscript>
         <footer>
             <div>
-                42 Good Food ln, Tastyville, MN, 5555
+                42 Good Food ln, Tastyville, MN, 55555
             </div>
             <div>
-                (777) 777-7777
+                777-777-7777
             </div>
         </footer>
     </body>

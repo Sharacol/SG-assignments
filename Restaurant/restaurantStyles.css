@@ -1,3 +1,91 @@
+html, body{
+    height: 100%;  
+
+}
 body{
+    /* overflow: hidden; */
     text-align: center;
+    background-color: aqua;
+    line-height: 2;
+}
+
+footer{
+    position: relative;
+    bottom: 0rem;
+    border-top: 1px solid black;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: darkgray;
+}
+
+header{
+    position: relative;
+    padding: 1rem;
+    top: 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    background-color: darkgray;
+
+}
+
+h1{
+    font-family: 'Staatliches', cursive;
+
+}
+
+.homePage{
+    margin: 2rem;
+}
+
+a:visited{
+    color: brown
+}
+a:hover{
+    font-weight: bold;
+}
+table{
+    border: 1px solid black;
+    background-color: burlywood;
+    margin: auto;
+    margin-bottom: 1rem;
+
+}
+tr:nth-child(even){
+    background-color: azure
+}
+
+.description{
+    margin: auto
+
+}
+td:nth-child(odd){
+    padding-right: 6rem;
+    text-align: left;
+}
+.carousel{
+    height: 10rem;
+}
+
+.carousel-inner{
+    top:40%;
+}
+
+.jsWarning{
+    margin: 1rem;
+    
+}
+
+.homeIcon{
+    width: 1rem;
+}
+.btn, .description{
+    margin-bottom: 1.5rem;
+
+}
+
+.announcement{
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
 }

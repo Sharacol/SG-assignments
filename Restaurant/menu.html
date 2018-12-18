@@ -1,119 +1,182 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="./restaurantStyles.css">
+        <title>Menu</title>
     </head>
-    <header>
-        <h1>
-            Marcellino's
-        </h1>        
-        <div class = "pageLinks">
-            <a href='./front.html'>Home</a>
-            <a href='./menu.html'>Menu</a>
-            <a href='./contact.html'>Contact Us</a>
-        </div>
-    </header>
     <body>
+
+    <header>
+        <div class = "jumbotron">
+            <h1 class ="display-4">
+                Shark's
+            </h1>  
+            <hr class = "my-4">
+            
+            <div class = "pageLinks">
+                <ul class ="nav nav-pills nav-fill">
+
+                    <li class = "nav-item">
+                        <a class="nav-link" href='./menu.html'>Menu</a>                    
+                    </li>                    
+                    <li class = "nav-item ">
+                        <a class = "nav-link active" href='./front.html'>
+                            <img src="../open-iconic-master/svg/home.svg" alt = "home icon" class="homeIcon">
+                        </a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href='./contact.html'>Contact Us</a> 
+                                           
+                    </li>
+                </ul>
+            </div>
+    </header>
         <div class = "fullMenu">
-            <div class="menuItem">
-                <p class= "itemTitle">
-                    Burger and Fries
-                </p>
-                <p class = "itemDescription">
-                    Your choice - with or without cheese, Pickle, onion, tomato, and lettuce. Served with our famous thick cut french fries
-                </p>
-                <p class="itemPrice">
-                    $7.95
-                </p>
+            <div class ="row justify-content-center">
+                <div class="menuItem col-3">
+                    <p class= "itemTitle">
+                        <h3>
+                            Burger and Fries
+
+                        </h3>
+                    </p>
+                    <p class = "itemDescription">
+                        Your choice - with or without cheese, Pickle, onion, tomato, and lettuce. Served with our famous thick cut french fries
+                    </p>
+                    <p class="itemPrice">
+                        $7.95
+                    </p>
+                </div>
+                <div class="menuItem col-3">
+                    <p class= "itemTitle">
+                        <h3>
+                            Hot Dog and Chips
+                        </h3>
+                    </p>
+                    <p class = "itemDescription">
+                        A Summer Classic! Your choice - white or wheat bun, Relish, mustard, and ketchup. Served with our house made chips    
+                    </p>
+                    <p class="itemPrice">
+                        $7.95
+                    </p>
+                </div>
+                <div class="menuItem col-3">
+                    <p class= "itemTitle">
+                        <h3>
+                            Italian Sausage and peppers                        
+                        </h3>
+                    </p>
+                    <p class = "itemDescription">
+                        An All-Time Favorite! Your choice - mild or spicy Cole Slaw served with garlic mashers
+                    </p>
+                    <p class="itemPrice">
+                        $8.95
+                    </p>
+                </div>
             </div>
-            <div class="menuItem">
-                <p class= "itemTitle">
-                    Hot Dog and Chips
-                </p>
-                <p class = "itemDescription">
-                    A Summer Classic! Your choice - white or wheat bun, Relish, mustard, and ketchup. Served with our house made chips    
-                </p>
-                <p class="itemPrice">
-                    $7.95
-                </p>
+            <div class = "row justify-content-center">
+                <div class="menuItem col-3">
+                    <p class= "itemTitle">
+                        <h3>
+                            Tenderloin Sandwhich and Chips                        
+                        </h3>
+                    </p>
+                    <p class = "itemDescription">
+                        Really Hits the Spot! Plain or Sesame Seed Bun pickle, onion, tomato, and lettuce. Served with our house-made chips.    
+                    </p>
+                    <p class="itemPrice">
+                        $8.95
+                    </p>
+                </div>
+                <div class="menuItem col-3">
+                    <p class= "itemTitle">
+                        <h3>
+                            House Salad
+                        </h3>
+                    </p>
+                    <p class = "itemDescription">
+                        On the Lighter Side. Your choice - with our without cheese. Iceberg lettuce, tomatoes, peppers, Thousand Island or Ranch dressing. Served with a dinner roll.
+                    </p>
+                    <p class="itemPrice">
+                        $6.95
+                    </p>
+                </div>
+                <div class="menuItem col-3">
+                    <p class= "itemTitle">
+                        <h3>
+                            Brisket Sandwhich and Fries
+                        </h3>
+                    </p>
+                    <p class = "itemDescription">
+                        A taste of Texas! Smoked Brisket on thick-cut Texas Toast Cole Slaw served with our famous thick-cut french fries    
+                    </p>
+                    <p class="itemPrice">
+                        $7.95
+                    </p>
+                </div>
             </div>
-            <div class="menuItem">
-                <p class= "itemTitle">
-                    Tenderloin Sandwhich and Chips
-                </p>
-                <p class = "itemDescription">
-                    Really Hits the Spot! Plain or Sesame Seed Bun pickle, onion, tomato, and lettuce. Served with our house-made chips.    
-                </p>
-                <p class="itemPrice">
-                    $8.95
-                </p>
+            <div class="col-12">
+                <table>
+                        <th colspan="2">
+                            Beverages
+                        </th>
+                        <tr>
+                            <td>
+                                Root Beer
+                            </td>
+                            <td>
+                                $3.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Bottled Water
+                            </td>
+                            <td>
+                                $1.25
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Lemonade
+                            </td>
+                            <td>
+                                $1.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Lemonade
+                            </td>
+                            <td>
+                                $1.25
+                            </td>
+                        </tr>
+                    </table>
+
             </div>
-            <div class="menuItem">
-                <p class= "itemTitle">
-                    House Salad
-                </p>
-                <p class = "itemDescription">
-                    On the Lighter Side. Your choice - with our without cheese. Iceberg lettuce, tomatoes, peppers, Thousand Island or Ranch dressing. Served with a dinner roll.
-                </p>
-                <p class="itemPrice">
-                    $6.95
-                </p>
-            </div>
-            <div class="menuItem">
-                <p class= "itemTitle">
-                    Brisket Sandwhich and Fries
-                </p>
-                <p class = "itemDescription">
-                    A taste of Texas! Smoked Brisket on thick-cut Texas Toast Cole Slaw served with our famous thick-cut french fries    
-                </p>
-                <p class="itemPrice">
-                    $7.95
-                </p>
-            </div>
+
         </div>
-        <table>
-            <th>
-                Beverages
-            </th>
-            <tr>
-                <td>
-                    Root Beer
-                </td>
-                <td>
-                    $3.00
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Bottled Water
-                </td>
-                <td>
-                    $1.25
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Lemonade
-                </td>
-                <td>
-                    $1.00
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Lemonade
-                </td>
-                <td>
-                    $1.25
-                </td>
-            </tr>
-        </table>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <noscript>
+            <div class = "row col justify-content-center jsWarning">
+                <h2>
+                    This site is best viewed with javascript enabled
+                </h2>
+            </div>
+        </noscript>        
         <footer>
             <div>
-                1002 Falcon rd, Rochester, MN, 55904
+                42 Good Food ln, Tastyville, MN, 55555
             </div>
             <div>
-                467.465.5498
+                777-777-7777
             </div>
         </footer>
     </body>
