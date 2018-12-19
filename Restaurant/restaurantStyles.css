@@ -97,3 +97,11 @@ th{
 .nav{
     width: 100%
 }
+
+.picture{
+   display:block; 
+   margin: auto; 
+   text-align: center;
+   width: 400px;
+   height:150px;
+}

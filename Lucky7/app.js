@@ -14,14 +14,12 @@ let play = ()=>{
         let sum = rollDice() + rollDice()
         if(sum === 7 ){
             moneyNow += 4
-            console.log('yo won!')
         }else{
             moneyNow -= 1
         }
-        console.log(moneyNow)
         if(moneyNow > maxMoney){
             maxMoney = moneyNow
-            rollWhenRich = roll
+            rollWhenRich = roll + 1
         }
         roll++
     }
@@ -40,4 +38,6 @@ let updatePage = ( startingBet, roll, maxMoney, rollWhenRich ) =>{
     document.getElementById('Rich').innerHTML = maxMoney
     document.getElementById('Roll Rich').innerHTML = rollWhenRich
     document.getElementById('gameTable').style.display = "inline-block"
+    document.getElementById('results').style.display = "block"
+    
 }
